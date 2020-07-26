@@ -2,6 +2,8 @@ version: "3"
 services:
     beaconbot:
         build: ./
+        container_name: beacon-verifier-bot
+        restart: always
         environment:
             - TG_TOKEN=${TG_TOKEN}
             - TG_GROUP_ID=${TG_GROUP_ID}
