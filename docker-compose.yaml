@@ -1,0 +1,10 @@
+version: "3"
+services:
+    beaconbot:
+        build: ./
+        environment:
+            - TG_TOKEN=${TG_TOKEN}
+            - TG_GROUP_ID=${TG_GROUP_ID}
+            - BEACON_VERIFIER_API=${BEACON_VERIFIER_API}
+            - DEBUG=${DEBUG}
+            - IGNORED_SOURCES=${IGNORED_SOURCES}
